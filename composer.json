@@ -1,0 +1,25 @@
+{
+    "name": "bjoernffm/step-functions",
+    "description": "E6-B flight computer emulation",
+    "keywords": ["e6b","E6-B", "flight computer", "aviation"],
+    "homepage": "https://github.com/bjoernffm/e6b",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Björn Ebbrecht",
+            "email": "bjoern.ebbrecht@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
