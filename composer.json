@@ -1,10 +1,10 @@
 {
     "name": "bjoernffm/step-functions",
-    "description": "E6-B flight computer emulation",
-    "keywords": ["e6b","E6-B", "flight computer", "aviation"],
-    "homepage": "https://github.com/bjoernffm/e6b",
+    "description": "Step Functions for php",
+    "keywords": ["function", "math", "step", "stepwise"],
+    "homepage": "https://github.com/bjoernffm/step-functions",
     "type": "library",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Björn Ebbrecht",
