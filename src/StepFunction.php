@@ -5,25 +5,25 @@ namespace bjoernffm\stepFunctions;
 
 class StepFunction
 {
-    protected $from;
-    protected $to;
+    protected $start;
+    protected $end;
     protected $function;
 
-    public function __construct(float $from, float $to, callable $function)
+    public function __construct(float $start, float $end, callable $function)
     {
-        $this->from = $from;
-        $this->to = $to;
+        $this->start = $start;
+        $this->end = $end;
         $this->function = $function;
     }
 
-    public function getFrom(): float
+    public function getStart(): float
     {
-        return $this->from;
+        return $this->start;
     }
 
-    public function getTo(): float
+    public function getEnd(): float
     {
-        return $this->to;
+        return $this->end;
     }
 
     public function getFunction(): callable
@@ -31,18 +31,18 @@ class StepFunction
         return $this->function;
     }
 
-    public function getValue(float $x): float
+    public function getValue(float $input): float
     {
         $function = $this->function;
-        return $function($x);
+        return $function($input);
     }
 
-    public function hasValue(float $x): bool
+    public function hasValue(float $input): bool
     {
-        if ($this->from <= $x and $x <= $this->to) {
+        if ($this->start <= $input and $input <= $this->end) {
             return true;
-        } else {
-            return false;
         }
+
+        return false;
     }
 }

@@ -9,8 +9,8 @@ final class InterpolatorTest extends TestCase
 {
     public function testInterpolatorBasics(): void
     {
-        $first = new StepFunction(0, 1, function($x) { return $x; });
-        $second = new StepFunction(1, 2, function($x) { return -1*$x+2; });
+        $first = new StepFunction(0, 1, function($input) { return $input; });
+        $second = new StepFunction(1, 2, function($input) { return -1*$input+2; });
 
         $interpolator = new Interpolator();
         $interpolator->add($first);
@@ -28,8 +28,8 @@ final class InterpolatorTest extends TestCase
         $this->expectException(OutOfBoundsException::class);
         $this->expectExceptionMessage('No function defined for -1');
 
-        $first = new StepFunction(0, 1, function($x) { return $x; });
-        $second = new StepFunction(1, 2, function($x) { return -1*$x+2; });
+        $first = new StepFunction(0, 1, function($input) { return $input; });
+        $second = new StepFunction(1, 2, function($input) { return -1*$input+2; });
 
         $interpolator = new Interpolator();
         $interpolator->add($first);

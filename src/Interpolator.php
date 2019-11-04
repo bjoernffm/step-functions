@@ -13,13 +13,13 @@ class Interpolator
         $this->stepFunctionList[] = $stepFunction;
     }
 
-    public function getValue($x) {
+    public function getValue($input) {
         foreach($this->stepFunctionList as $stepFunction) {
-            if ($stepFunction->hasValue($x) === true) {
-                return $stepFunction->getValue($x);
+            if ($stepFunction->hasValue($input) === true) {
+                return $stepFunction->getValue($input);
             }
         }
 
-        throw new OutOfBoundsException('No function defined for '.$x);
+        throw new OutOfBoundsException('No function defined for '.$input);
     }
 }
