@@ -4,17 +4,17 @@
 
 **Step Functions** is a library which offers implementation of step functions. Define one or multiple functions, define the bounds where they are in use and this library will interpolate between the functions.
 
-# Installation
+## Installation
 
 This library is provided as [Composer package](https://packagist.org/packages/bjoernffm/step-functions). To install it, simply execute the folowing command:
 
-```
+```plain
 composer require bjoernffm/step-functions
 ```
 
 **Note:** This library requires **PHP 7.2**.
 
-# Usage
+## Usage
 
 The simplest usage that will mostly fulfill your needs is to define one or more functions and add them to an interpolator instance:
 
@@ -38,7 +38,7 @@ echo $interpolator->getValue(1.5); // output 0.5
 echo $interpolator->getValue(2); // output 0
 ```
 
-# Contributing
+## Contributing
 
 Do you want to help improving this project? Simply *fork* it and post a pull request. You can do everything on your own, you don't need to ask if you can, just do all the awesome things you want!
 
