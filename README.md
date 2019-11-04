@@ -19,6 +19,8 @@ composer require bjoernffm/step-functions
 The simplest usage that will mostly fulfill your needs is to define one or more functions and add them to an interpolator instance:
 
 ```php
+<?php
+
 use bjoernffm\stepFunctions\StepFunction;
 use bjoernffm\stepFunctions\Interpolator;
 
