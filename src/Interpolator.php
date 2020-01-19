@@ -13,8 +13,9 @@ class Interpolator
         $this->stepFunctionList[] = $stepFunction;
     }
 
-    public function getValue($input) {
-        foreach($this->stepFunctionList as $stepFunction) {
+    public function getValue($input)
+    {
+        foreach ($this->stepFunctionList as $stepFunction) {
             if ($stepFunction->hasValue($input) === true) {
                 return $stepFunction->getValue($input);
             }
