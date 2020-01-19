@@ -1,5 +1,6 @@
 <?php
-declare(strict_types = 1);
+
+declare(strict_types=1);
 
 namespace bjoernffm\stepFunctions;
 
@@ -34,6 +35,7 @@ class StepFunction
     public function getValue(float $input): float
     {
         $function = $this->function;
+
         return $function($input);
     }
 
