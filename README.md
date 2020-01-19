@@ -1,6 +1,8 @@
 # Step Functions
 
-![GitHub](https://img.shields.io/github/license/bjoernffm/step-functions) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/bjoernffm/step-functions) ![GitHub top language](https://img.shields.io/github/languages/top/bjoernffm/step-functions) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3001bb4b742c45d69db1ce6c3171b28e)](https://www.codacy.com/manual/bjoernffm/step-functions)
+![GitHub](https://img.shields.io/github/license/bjoernffm/step-functions)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/bjoernffm/step-functions)
+![GitHub top language](https://img.shields.io/github/languages/top/bjoernffm/step-functions)
 [![Build Status](https://travis-ci.org/bjoernffm/step-functions.svg?branch=master)](https://travis-ci.org/bjoernffm/step-functions)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3001bb4b742c45d69db1ce6c3171b28e)](https://www.codacy.com/manual/bjoernffm/step-functions?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bjoernffm/step-functions&amp;utm_campaign=Badge_Grade)
 [![StyleCI](https://github.styleci.io/repos/219455050/shield?branch=master&style=flat)](https://github.styleci.io/repos/219455050)
